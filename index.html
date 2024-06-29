@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+
+<body onload="generateFaces()">
+    <h1>Matching Game</h1>
+    <p>Click on the extra smiling face on the left to win!</p>    
+    <button id="restartBtn">Restart game</button>
+    <br>
+    <div id="leftSide"></div>
+    <div id="rightSide"></div>
+    <audio id="wrongSound">
+        <source src="sound/ogg/wrong.ogg" type="audio/ogg">
+    </audio>
+    <audio id="correctSound">
+        <source src="sound/wav/correct.wav" type="audio/wav">
+    </audio>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
