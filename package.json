@@ -8,8 +8,8 @@
     "copy-html": "cp index.html dist",
     "copy-js": "mkdir dist/js && cp -r ./js dist/js",
     "copy-css": "mkdir dist/css && cp -r ./css dist/css",
-    "copy-sounds": "mkdir dist/ogg && mkdir dist/wav && cp -r ./ogg dist/ogg && cp -r ./wav dist/wav",
-    "copy-files": "npm run copy-html & npm run copy-js & npm run copy-css",
+    "copy-sounds": "mkdir dist/ogg && mkdir dist/wav && cp -r ./ogg/* dist/ogg && cp -r ./wav/* dist/wav",
+    "copy-files": "npm run copy-html & npm run copy-js & npm run copy-css & npm run copy-sounds",
     "init": "npm run clean-dist && npm run copy-files",
     "start": "npm run init && parcel --open",
     "build": "npm run init && parcel build"
