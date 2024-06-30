@@ -1,0 +1,22 @@
+{
+  "name": "matching-game",
+  "version": "1.0.0",
+  "description": "*yadda yadda yadda*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel --open",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rockleejb/matching-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rockleejb/matching-game/issues"
+  },
+  "homepage": "https://github.com/rockleejb/matching-game#readme"
+}
