@@ -4,9 +4,18 @@
   "description": "*yadda yadda yadda*",
   "source": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel --open",
-    "build": "parcel build"
+    "clean-dist": "rm -rf dist && mkdir dist",
+    "copy-html": "cp -r index.html dist",
+    "copy-img": "cp -vR ./images ./dist",
+    "copy-css": "cp -r ./css dist",
+    "copy-js": "cp -r ./js dist",
+    "copy-ogg": "cp -r ./ogg dist",
+    "copy-wav": "cp -r ./wav dist",
+    "copy-sounds": "npm run copy-ogg & npm run copy-wav",
+    "copy-files": "npm run copy-html & npm run copy-img & npm run copy-css & npm run copy-js & npm run copy-sounds",
+    "init": "npm run clean-dist && npm run copy-files",
+    "start": "npm run init && parcel --open",
+    "build": "npm run init && parcel build"
   },
   "repository": {
     "type": "git",
