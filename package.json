@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/rockleejb/matching-game/issues"
   },
-  "homepage": "https://github.com/rockleejb/matching-game#readme"
+  "homepage": "https://github.com/rockleejb/matching-game#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
 }
