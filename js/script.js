@@ -10,7 +10,7 @@ function generateFaces() {
     restartBtn.hidden = true;
     for (let i = 0; i < numberOfFaces; i++) {
         const face = document.createElement("img");
-        face.src = '../images/smile.png';
+        face.src = 'img/smile.png';
         const randomTop = Math.floor(Math.random() * 400);
         const randomLeft = Math.floor(Math.random() * 400);
         face.style.top = randomTop + 'px';
